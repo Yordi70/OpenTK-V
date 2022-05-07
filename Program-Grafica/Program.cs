@@ -1,0 +1,28 @@
+using System;
+using System.Windows.Forms;
+using OpenTK.Mathematics;
+using OpenTK.Windowing.Common;
+using OpenTK.Windowing.Desktop;
+using System.IO;
+using System.Text.Json;
+namespace Program_Grafica
+{
+    public static class Program
+    {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+            //CrearGame();
+        }
+
+       
+      
+    }
+}
